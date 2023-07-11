@@ -17,6 +17,26 @@ Nota: Mirar los numeros de procesos que genera por si es necesario matarlos y li
 user@docker01:~$ for i in 1; do while : ; do : ; done & done
 [1] 10463
 
-![Alt text](image.png)
+![Alt text](./Rimages/image.png)
 
 user@docker01:~$ kill -9 10463
+
+### Stress
+Stress es una herramienta para generar carga en los recursos de la maquina CPU - Mem - I/O
+
+es facil de verlo con el script wathc-it
+
+Ejemplos para realizar la carga
+stress --cpu 2 (Para carga de CPU al 2%)
+stress --cpu 4 (Para carga de CPU al 4%)
+
+stress --vm 2 (Para carga de Memoria al 2%)
+
+stress --io 4 (Para carga de I/O al 4%)
+
+
+
+Nota: En el caso de CPU Load, genera la carga como el usuario, en cambio con Stress se registra la carga como si fuera de procesos de Sistema.
+En el grafico se puede percibir la vista de la carga 
+
+![Alt text](./Rimages/image-1.png)
