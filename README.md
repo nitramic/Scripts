@@ -17,7 +17,7 @@ Nota: Mirar los numeros de procesos que genera por si es necesario matarlos y li
 user@docker01:~$ for i in 1; do while : ; do : ; done & done
 [1] 10463
 
-![Alt text](./Rimages/image.png)
+![Alt text](./Rimages/image-0.png)
 
 user@docker01:~$ kill -9 10463
 
