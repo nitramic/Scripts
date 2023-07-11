@@ -1,0 +1,1 @@
+parallel -j 32 -a hosts.txt 'ping -c1 {} > /dev/null 2>&1 && echo {} is available || echo {} is down'
